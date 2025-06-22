@@ -46,4 +46,4 @@ RUN rm -f pytest.ini
 
 # Run specified test
 CMD ["pytest", "-v", "-rA", "--tb=long", "-p", "no:cacheprovider", "--disable-warnings", \
-    "scipy/sparse/tests/test_base.py"] 
+    "scipy/sparse/tests/test_matrix.py"]
