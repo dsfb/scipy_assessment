@@ -7,6 +7,9 @@ from scipy.sparse import csr_matrix
 
 def test_check_round_csr_matrix():
     a = csr_matrix((3, 4))
-    assert_raises(AssertionError, assert_raises, TypeError, round(a))
-    assert_(assert_raises(TypeError, round(a))  is None)
+    assert_("__round__" in dir(a))
 
+
+def test_check_round_csr_matrix2():
+     A = csr_matrix([[-1, 0, 17],[0, -5, 0],[1, -4, 0],[0,0,0]],'d')
+     assert_equal(round(A), round(self.spmatrix(A)).todense())
