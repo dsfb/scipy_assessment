@@ -12,4 +12,5 @@ def test_check_round_csr_matrix():
 
 def test_check_round_csr_matrix2():
      A = csr_matrix((5, 7))
-     assert_equal(round(A), round(csr_matrix(A)).todense())
+     assert_almost_equal(round(A), round(csr_matrix(A).todense()))
+     assert_equal(round(A), round(csr_matrix(A).todense()))
