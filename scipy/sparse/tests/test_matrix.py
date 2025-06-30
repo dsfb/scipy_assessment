@@ -11,5 +11,5 @@ def test_check_round_csr_matrix():
 
 
 def test_check_round_csr_matrix2():
-     A = csr_matrix([[-1, 0, 17],[0, -5, 0],[1, -4, 0],[0,0,0]],'d')
+     a = csr_matrix((5, 7))
      assert_equal(round(A), round(self.spmatrix(A)).todense())
