@@ -11,6 +11,5 @@ def test_check_round_csr_matrix():
 
 
 def test_check_round_csr_matrix2():
-     A = csr_matrix((5, 7))
-     B = eye(3)
-     assert_equal(round(B), B)
+     I = eye(3)
+     assert_((round(I) == I).all())
