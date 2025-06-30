@@ -38,7 +38,7 @@ class _data_matrix(spmatrix):
         return self._with_data(abs(self._deduped_data()))
 
     def __round__(self):
-        return self._with_data(round(self._deduped_data()))
+        return self._with_data(np.round(self._deduped_data()))
 
     def _real(self):
         return self._with_data(self.data.real)
