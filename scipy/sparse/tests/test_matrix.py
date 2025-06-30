@@ -1,7 +1,7 @@
 from __future__ import division, print_function, absolute_import
 
 import numpy as np
-from numpy.testing import assert_array_almost_equal, assert_, assert_raises
+from numpy.testing import assert_array_almost_equal, assert_equal, assert_, assert_raises
 from scipy.sparse import csr_matrix
 
 
